@@ -1,0 +1,92 @@
+/* chatlist.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+}
+
+.chatlist-container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.chatlist-header {
+  background-color: #4267B2;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #4267B2;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chatlist {
+  padding: 15px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.chat-item:hover {
+  background-color: #e9effc;
+}
+
+.avatar {
+  font-size: 2rem;
+  margin-right: 12px;
+}
+
+.chat-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.chat-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.chat-message {
+  font-size: 0.9rem;
+  color: #555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.chat-time {
+  font-size: 0.75rem;
+  color: #888;
+  padding-left: 10px;
+}
