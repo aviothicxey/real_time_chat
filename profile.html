@@ -1,0 +1,33 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile | Chat App</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <h2>User Profile</h2>
+
+    <div class="profile-card">
+      <div class="profile-pic">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture" id="profileImage" />
+        <input type="file" id="imageUpload" />
+      </div>
+
+      <div class="profile-info">
+        <label for="name">Display Name:</label>
+        <input type="text" id="name" placeholder="John Doe" />
+
+        <label for="email">Email (read-only):</label>
+        <input type="email" id="email" value="user@example.com" readonly />
+
+        <button class="update-btn">Update Profile</button>
+        <button class="logout-btn">Logout</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
